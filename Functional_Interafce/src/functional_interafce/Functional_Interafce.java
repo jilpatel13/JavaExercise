@@ -3,30 +3,33 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package finalkeyword;
+package functional_interafce;
 
 /**
  *
  * @author jilpatel
+ * 
+ * 
+ * Types of Interface
+ * Normal
+ * Single abstract method - Functional Interface
+ * Marker interface
  */
 
-final class A
+interface Test
 {
-   final int i=0;
-    
-    public A()
-    {
-       int i=10;
-    }
-    }
-public class FinalKeyword {
+    void show();
+}
+public class Functional_Interafce {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       
         
-    }
-    
+        Test obj = () -> System.out.println("Lamda expr");
+          
+                obj.show();
+
+        }   
 }

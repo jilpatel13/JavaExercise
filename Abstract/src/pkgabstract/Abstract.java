@@ -9,13 +9,28 @@ package pkgabstract;
  *
  * @author jilpatel
  */
+
+abstract class Car
+{
+    public abstract void cartype();
+    
+}
+
+class Bike extends Car
+{
+    public void cartype()
+    {
+        
+    }
+}
 public class Abstract {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        Car ob = new Bike();
     }
     
 }

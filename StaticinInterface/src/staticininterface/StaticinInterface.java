@@ -3,30 +3,27 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package finalkeyword;
+package staticininterface;
 
 /**
  *
  * @author jilpatel
  */
-
-final class A
+interface Display
 {
-   final int i=0;
-    
-    public A()
+    static void show()
     {
-       int i=10;
+        System.out.println("in show");
     }
-    }
-public class FinalKeyword {
+}
+public class StaticinInterface {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       
-        
+        // TODO code application logic here
+        Display.show();
     }
     
 }
