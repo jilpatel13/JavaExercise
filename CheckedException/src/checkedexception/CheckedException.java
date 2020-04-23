@@ -25,6 +25,7 @@ public class CheckedException {
         int n = s.nextInt();
         s.close();
         }
+        
         catch(Exception e)
         {
             System.out.println("Enter integer only");
